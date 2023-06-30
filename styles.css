@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.file-tree {
+  margin-bottom: 20px;
+}
+
+.file-tree .folder {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.file-tree .folder.active {
+  font-weight: bold;
+}
+
+.file-tree .file {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.file-tree .file.active {
+  font-weight: bold;
+}
+
+.add-folder input[type="text"] {
+  margin-bottom: 5px;
+}
+
+.main-content {
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-header input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.note-content {
+  width: 100%;
+  height: calc(100vh - 150px);
+  box-sizing: border-box;
+  padding: 10px;
+  resize: none;
+}

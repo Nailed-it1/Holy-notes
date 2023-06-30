@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Note Taking App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="file-tree" id="fileTree">
+      <!-- File tree will be dynamically generated here -->
+    </div>
+    <div class="add-folder">
+      <input type="text" id="newFolderName" placeholder="Folder name">
+      <button onclick="createNewFolder()">Create Folder</button>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="note-header">
+      <input type="text" id="noteTitle" placeholder="Note title">
+      <div>
+        <button onclick="saveNote()">Save</button>
+        <button onclick="deleteNote()">Delete</button>
+      </div>
+    </div>
+    <textarea id="noteContent" placeholder="Note content"></textarea>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
